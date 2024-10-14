@@ -1,6 +1,7 @@
 services:
   db:
-    image: postgres:17
+    build:
+      dockerfile: dockerfile
     restart: always
     environment:
       POSTGRES_USER: developer
